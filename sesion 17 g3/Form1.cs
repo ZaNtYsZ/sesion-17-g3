@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sesion_17_g3.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace sesion_17_g3
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductoFDM fDM = new ProductoFDM();
+            fDM.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            
+
         }
     }
 }

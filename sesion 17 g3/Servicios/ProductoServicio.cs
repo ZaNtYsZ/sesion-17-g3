@@ -11,6 +11,10 @@ namespace sesion_17_g3.Servicios
     internal class ProductoServicio
     {
         List<Producto> Productos = new List<Producto>();
+        public List<Producto> Productos()
+        {
+            return Productos;
+        }
 
         public void AgregarProducto(Producto producto)
         {
